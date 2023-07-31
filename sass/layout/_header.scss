@@ -1,3 +1,5 @@
+@use '../abstracts/variables';
+
 /* ------------------------------------------------- */
 /* HEADER                                            */
 /* ------------------------------------------------- */
@@ -30,7 +32,7 @@
 /* ------------------------------------------------- */
 
 .nav-bar {
-    background-color: #fff;
+    background-color: variables.$navbar-background-color;
     display: none;
 
     &__nav-list { /* .nav-bar__nav-list */
@@ -53,10 +55,10 @@
 
     &__nav-link {
         display: block;
-        color: #000;
+        color: variables.$nav-link-color;
         padding: 1em 2em;
         text-decoration: none;
-        border-bottom: solid 1px #cccccc;
+        border-bottom: solid 1px variables.$nav-link-bordercolor;
 
         @media (min-width: 1024px) {
             & {
