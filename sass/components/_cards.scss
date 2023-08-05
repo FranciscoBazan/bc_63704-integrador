@@ -1,12 +1,24 @@
+@use '../abstracts/variables';
+
+.section-cards__header {
+    padding: 1em ;
+    background-color: variables.$navbar-background-color;
+    margin-bottom: 1em;
+
+    @media (min-width: 1024px) {
+        max-width: 100%;
+    }
+}
+
 .card {
+    text-decoration: none;
     outline: none;
-    width: 220px;
     max-width: 300px;
-    height: 400px;
+    height: 450px;
     overflow: hidden;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    background-color: orange;
+    background-color: variables.$cards-background-color;
+    color: variables.$cards-color;
+    border-radius: 10px;
     box-shadow: 0 1px 5px rgba(0,0,0, .2), 0 0 3px rgba(0,0,0, .3);
 
     transition: all .2s; /* No puede ser all */
@@ -18,38 +30,17 @@
         box-shadow: 0 7px 8px rgba(0,0,0, .05), 0 3px 3px rgba(0,0,0, .01);
     }
 
-    &:nth-child(5n + 1) {
-        background-image: linear-gradient(to top, #aaafad 0%, #60efff 30%);
-    }
-
-    &:nth-child(5n + 2) {
-        background-image: linear-gradient(to top, #696eff 0%, #f8accf 30%);
-    }
-
-    &:nth-child(5n + 3) {
-        background-image: linear-gradient(to top, #ff1b6b 0%, #34caff 30%);
-    }
-
-    &:nth-child(5n + 4) {
-        background-image: linear-gradient(to top, #ff930f 0%, #fff95b 30%);
-    }
-
-    &:nth-child(5n + 5) {
-        background-image: linear-gradient(to top, #ff0f7b 0%, #f89b29 30%);
-    }
-
     &__image-container {
-        height: 200px;
-        background-color: blue;
+        height: 300px;
         overflow: hidden;
-        clip-path: polygon(0 0, 100% 0, 100% 200px, 0 180px); /* estado inicial */
+        /* clip-path: polygon(0 0, 100% 0, 100% 200px, 0 180px); */ /* estado inicial */
 
     }
 
-    &:hover &__image-container,
+   /*  &:hover &__image-container,
     &:focus &__image-container {
-        clip-path: polygon(0 0, 100% 0, 100% 190px, 0 200px); /* estado final */
-    }
+        clip-path: polygon(0 0, 100% 0, 100% 190px, 0 200px);  //estado final 
+    } */
 
     &__image {
         width: 100%;
@@ -68,9 +59,18 @@
         padding: 1em;
     }
 
+    &_heading {
+        font-size: 1.3em;
+        border-bottom: solid 1px #fff;
+    }
+
+    &__description {
+        font-size: 1em;
+    }
+
     @media (min-width: 1024px) {
         & { /* .card */
-            min-width: 240px;
+            min-width: 260px;
         }
     }
 
