@@ -1,7 +1,7 @@
 @use '../abstracts/variables';
 
 .main-footer {
-    background-color: variables.$cards-background-color;
+    background-color: variables.$searchbar-backgorund-color;
     color: variables.$cards-color;
     display: flex;
     flex-direction: column;
@@ -89,7 +89,7 @@
         position: absolute;
         top: 0;
         left: 10px;
-        background-color: variables.$cards-background-color;
+        background-color: variables.$searchbar-backgorund-color;
         padding: .2em;
         transform: translateY(10px);
         transition: transform .5s;
@@ -97,7 +97,7 @@
 
     &__form-email {
         padding: 1em;
-        background-color: variables.$cards-background-color;
+        background-color: variables.$searchbar-backgorund-color;
         color: variables.$cards-color;
         font-size: 1em;
         border: solid 2px variables.$cards-color;
@@ -114,7 +114,7 @@
 
     &__form-button {
         font-size: 1.2em;
-        background-color: variables.$cards-background-color;
+        background-color: variables.$searchbar-backgorund-color;
         padding: .5em;
         position: absolute;
         right: 5px;
