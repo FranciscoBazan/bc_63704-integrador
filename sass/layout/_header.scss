@@ -188,7 +188,7 @@
     }
 
     &__form-submit {
-        background-color: #4b5462;
+        background-color: variables.$button-background-color;
         color: #fff;
         border: none;
         padding: .4em 1em;
