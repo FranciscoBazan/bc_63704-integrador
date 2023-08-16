@@ -152,6 +152,12 @@
         box-shadow: 0 2px 5px rgba(0,0,0, .2), 0 0 3px rgba(0,0,0, .3);
     }
 
+    &__submit:hover {
+        color: variables.$button-background-color;
+        background-color: variables.$cards-color;
+        border: solid 3px variables.$button-background-color;
+    }
+
     @media (min-width: 1024px) {
         & {
             grid-row: 2 / 3;

@@ -169,9 +169,9 @@
         border-radius: 10px 0px 0px 10px;
         background-color: variables.$searchbar-backgorund-color;
         padding: .3em;
-        font-weight: 700;
-        color: white;
-        border: solid 2px white;
+        font-size: 1.2em;
+        color: variables.$searchbar-color;
+        border: solid 2px variables.$searchbar-color;
         border-right: none;
     }
 
@@ -179,17 +179,17 @@
         background-color: variables.$searchbar-backgorund-color;
         padding: .7em;
         outline: none;
-        border: solid 2px white;
+        border: solid 2px variables.$searchbar-color;
         border-radius: 0px 10px 10px 0px;
         border-left: none;
         width: 70%;
-        color: white;
+        color: variables.$searchbar-color;
         margin-right: .5em;
     }
 
     &__form-submit {
         background-color: variables.$button-background-color;
-        color: #fff;
+        color: variables.$searchbar-color;
         border: none;
         padding: .4em 1em;
         border-radius: 10px;
@@ -240,7 +240,7 @@
     &__meat,
     &__bottom-bread {
         display: block;
-        background-color: #fff;
+        background-color: variables.$searchbar-color;
         height: .2em;
         position: absolute;
         left: .5em;
